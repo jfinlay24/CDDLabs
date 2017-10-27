@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 #Author: Jonathan Finlay
 #Date: 9/10/17
 #Bugs: N/A
 #Description: build the program below
 
+=======
+>>>>>>> 1ede86671bd97d37bdc409f553f1d0e044fb54f8
 CC=g++
 CFLAGS= -std=c++11 -pthread
 FILES= signal.cpp Semaphore.cpp
