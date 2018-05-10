@@ -1,19 +1,15 @@
-<<<<<<< HEAD
 #Author: Jonathan Finlay
 #Date: 9/10/17
 #Bugs: N/A
 #Description: build the program below and remove the .o files
 
-
-=======
->>>>>>> 1ede86671bd97d37bdc409f553f1d0e044fb54f8
 CC=g++
 CFLAGS= -std=c++11 -pthread
 FILES= signal.cpp Semaphore.cpp
 OUT_EXE=signal
 
-build: $(FILES)
+ALL: $(FILES)
 	$(CC) -o $(OUT_EXE) $(FILES) $(CFLAGS)
-clean:
+CLEAN:
 	rm *.o
 
