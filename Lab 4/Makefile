@@ -1,5 +1,6 @@
 #Author: Jonathan Finlay
 #Date: 9/10/17
+#License Employed: GNU General Public License
 #Bugs: N/A
 #Description: build the program below, remove .o files and debug.
 
@@ -9,10 +10,11 @@ CFLAGS= -std=c++11 -pthread
 FILES= barrier.cpp Semaphore.cpp
 OUT_EXE=barrier
 
-build: $(FILES)
+ALL: $(FILES)
 	$(CC) -o $(OUT_EXE) $(FILES) $(CFLAGS)
-clean:
+CLEAN:
 	rm *.o
-debug:
-	$(CC) -g $(FILES) -o $(OUT_EXE) $(CFLAGS)
-	gdb barrier
+DEBUG:
+	DEBUGFLAGS = -g -O0 -Wall
+DEBUG:
+	ALL
